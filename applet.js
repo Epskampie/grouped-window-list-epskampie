@@ -661,7 +661,7 @@ class GroupedWindowListApplet extends Applet.Applet {
     }
 
     handleScroll(e, sourceFromAppGroup) {
-        if ((this.state.settings.scrollBehavior === 1 && this.state.settings.leftClickAction !== 3)
+        if ((this.state.settings.scrollBehavior === 1 && this.state.settings.leftClickAction !== 3 && this.state.settings.leftClickAction !== 4)
             || (e && sourceFromAppGroup && !this.state.settings.thumbnailScrollBehavior)) {
             return;
         }

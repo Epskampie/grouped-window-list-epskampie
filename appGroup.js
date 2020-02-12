@@ -741,6 +741,10 @@ class AppGroup {
                 return;
             }
             if (this.state.settings.leftClickAction === 3 && nWindows > 1) {
+                this.state.trigger("cycleWindows", null, this.actor._delegate);
+                return;
+            }
+            if (this.state.settings.leftClickAction === 4 && nWindows > 1) {
                 let foundActive = false;
                 for (let i = 0, len = nWindows; i < len; i++) {
                     if (

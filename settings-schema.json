@@ -121,8 +121,9 @@
     "description": "Left click action",
     "options": {
       "None": 1,
-      "Activate, then cycle": 2,
-      "Cycle windows": 3
+      "Toggle activation of last focused window": 2,
+      "Cycle windows": 3,
+      "Activate, then cycle": 4
     }
   },
   "middle-click-action": {
